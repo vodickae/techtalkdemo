@@ -35,7 +35,9 @@ public class DbConnector {
 	
 	public static Connection getConnection() {
 		try {
-			return connectionPool.getConnection();
+			Connection c = connectionPool.getConnection();
+			c.setAutoCommit(true);
+			return c;
 		} catch (SQLException e) {
 			LOG.error("Error getting connection: " + e.getMessage(),e);
 		}
