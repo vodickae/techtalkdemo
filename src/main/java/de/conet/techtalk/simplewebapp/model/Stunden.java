@@ -18,7 +18,7 @@ public class Stunden {
 	private int anzahl;
 
 	/**
-	 * Freigegebene Datensätze können auch von anderen Nutzern eingesehen
+	 * Freigegebene DatensÃ¤tze kÃ¶nnen auch von anderen Nutzern eingesehen
 	 * werden.
 	 */
 	private boolean freigegeben;
