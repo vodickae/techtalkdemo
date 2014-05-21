@@ -35,3 +35,19 @@ Im Rahmen des TechTalks sind diese Seiten um die folgenden Features zu ergänzen
 - Hauptseite: Formular zur Erfassung von Datensätzen
 - Hauptseite: Anzeige eigener Datensätze und freigegebener Datensätze aller andereren User
 - Hauptseite: Filterung der Ergebnisliste nach Projektbezeichnung und Kommentar, jeweils mit * und ? als Platzhalter
+
+## Mockups
+
+### Login
+
+<img src="mockup-login.png"/>
+
+### Hauptseite
+
+<img src="mockup-main.png"/>
+
+### Detailseite
+
+<img src="mockup-detail.png"/>
+
+
