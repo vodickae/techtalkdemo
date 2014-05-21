@@ -10,7 +10,7 @@
 1. git clone https://github.com/tkuconet/techtalkdemo.git (alternativ mit Eclipse-Plugin)
 2. cd techtalkdemo
 3. mvn jetty:run
-4. http://localhost:8080
+4. http://localhost:8080/root 
 
 ## Aufgabenstellung
 
