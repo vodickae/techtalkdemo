@@ -71,7 +71,7 @@ public class DbConnector {
 		c.createStatement().execute("CREATE TABLE IF NOT EXISTS stunden (id INT PRIMARY KEY AUTO_INCREMENT, fk_user_id INT NOT NULL, anzahl INT NOT NULL, projekt VARCHAR(255), kommentar VARCHAR(1000), freigegeben BOOLEAN NOT NULL, FOREIGN KEY(fk_user_id) REFERENCES user(id))");
 		c.createStatement().execute("INSERT INTO stunden (fk_user_id, anzahl, freigegeben, projekt, kommentar) VALUES (1,300,true,'Techtalk','Dies und das...')");
 		c.createStatement().execute("INSERT INTO stunden (fk_user_id, anzahl, freigegeben, projekt, kommentar) VALUES (2,50,true,'Techtalk','Schalten und verwalten')");
-		c.createStatement().execute("INSERT INTO stunden (fk_user_id, anzahl, freigegeben, projekt, kommentar) VALUES (3,1000,false,'Techtalk','Füße hochlegen')");
+		c.createStatement().execute("INSERT INTO stunden (fk_user_id, anzahl, freigegeben, projekt, kommentar) VALUES (3,1000,false,'Techtalk','FÃ¼ÃŸe hochlegen')");
 		c.close();
 	}
 	
