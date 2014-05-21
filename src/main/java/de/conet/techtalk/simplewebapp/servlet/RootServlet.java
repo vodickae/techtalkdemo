@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "RootServlet", urlPatterns = { "/" })
+@WebServlet(name = "RootServlet", urlPatterns = { "/root" })
 public class RootServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = -1555252762007821489L;
