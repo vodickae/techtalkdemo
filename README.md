@@ -36,6 +36,11 @@ Im Rahmen des TechTalks sind diese Seiten um die folgenden Features zu ergÃ¤nzen
 - Hauptseite: Anzeige eigener DatensÃ¤tze und freigegebener DatensÃ¤tze aller andereren User
 - Hauptseite: Filterung der Ergebnisliste nach Projektbezeichnung und Kommentar, jeweils mit * und ? als Platzhalter
 
+## Randbedingung
+
+Für die Umsetzung der Aufgabe sind nur die bereits referenzierten Abhängigkeiten erlaubt.
+Die Anwendung soll nur mit Hilfe von JSP, Servlets und JDBC erstellt werden.  
+
 ## Mockups
 
 ### Login
