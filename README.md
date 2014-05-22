@@ -38,7 +38,7 @@ Im Rahmen des TechTalks sind diese Seiten um die folgenden Features zu ergÃ¤nzen
 
 ## Randbedingung
 
-Für die Umsetzung der Aufgabe sind nur die bereits referenzierten Abhängigkeiten erlaubt.
+FÃ¼r die Umsetzung der Aufgabe sind nur die bereits referenzierten AbhÃ¤ngigkeiten erlaubt.
 Die Anwendung soll nur mit Hilfe von JSP, Servlets und JDBC erstellt werden.  
 
 ## Mockups
