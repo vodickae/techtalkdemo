@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,8 +15,8 @@
 	
 		Dies ist die Einstiegsseite der Anwendung. Folgende 2 Use Cases sind zu implementieren:
 		<ul>
-		<li>Ist der aktuelle Nutzer angemeldet, so wird ein redirect auf die Hauptseite durchgeführt.</li>
-		<li>Ist der aktuelle Nutzer nicht angemeldet, so wird ein Login-Formular dargestellt und der Login durchgeführt. Anschließend findet ebenfalls ein Redirect auf die Hauptseite statt.</li>
+		<li>Ist der aktuelle Nutzer angemeldet, so wird ein redirect auf die Hauptseite durchgefÃ¼hrt.</li>
+		<li>Ist der aktuelle Nutzer nicht angemeldet, so wird ein Login-Formular dargestellt und der Login durchgefÃ¼hrt. AnschlieÃŸend findet ebenfalls ein Redirect auf die Hauptseite statt.</li>
 		</ul>
 		
 		Seiten:

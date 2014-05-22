@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,10 +14,10 @@
   	
 	    <h1>Main (Hauptseite)</h1>
 	
-		Dies ist die Hauptseite der Anwendung f�r angemeldete Nutzer. Folgende Use Cases sind hier zu implementieren:
+		Dies ist die Hauptseite der Anwendung für angemeldete Nutzer. Folgende Use Cases sind hier zu implementieren:
 		<ul>
 		<li>Eingabe-Formular zum erfassen einen neuen Stunden-Datensatzes.</li>
-		<li>Tabelle mit der Auflistung aller Stunden-Datens�tze des Nutzers, sowie von anderen Nutzern freigegebener Datens�tze.</li>
+		<li>Tabelle mit der Auflistung aller Stunden-Datensätze des Nutzers, sowie von anderen Nutzern freigegebener Datensätze.</li>
 		<li>Link zur Detailansicht pro Datensatz</li>
 		<li>Suchformular, mit dem die Tabelle "gefiltert" werden kann.</li>
 		</ul>
