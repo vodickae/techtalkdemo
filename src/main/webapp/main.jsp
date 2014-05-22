@@ -13,10 +13,10 @@
   	
 	    <h1>Main (Hauptseite)</h1>
 	
-		Dies ist die Hauptseite der Anwendung für angemeldete Nutzer. Folgende Use Cases sind hier zu implementieren:
+		Dies ist die Hauptseite der Anwendung fï¿½r angemeldete Nutzer. Folgende Use Cases sind hier zu implementieren:
 		<ul>
 		<li>Eingabe-Formular zum erfassen einen neuen Stunden-Datensatzes.</li>
-		<li>Tabelle mit der Auflistung aller Stunden-Datensätze des Nutzers, sowie von anderen Nutzern freigegebener Datensätze.</li>
+		<li>Tabelle mit der Auflistung aller Stunden-Datensï¿½tze des Nutzers, sowie von anderen Nutzern freigegebener Datensï¿½tze.</li>
 		<li>Link zur Detailansicht pro Datensatz</li>
 		<li>Suchformular, mit dem die Tabelle "gefiltert" werden kann.</li>
 		</ul>
@@ -27,7 +27,7 @@
 		    <input type="text" class="form-control" id="searchProjekt" placeholder="Suche nach Projekt">
 		  </div>
 		  <div class="form-group">
-		    <input type="password" class="form-control" id="searchComment" placeholder="Suche nach Kommentar">
+		    <input type="text" class="form-control" id="searchComment" placeholder="Suche nach Kommentar">
 		  </div>
 		  <button type="submit" class="btn btn-default">Suche starten</button>
 		</form>		
