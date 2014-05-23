@@ -13,10 +13,13 @@ import org.slf4j.LoggerFactory;
 
 import de.conet.techtalk.simplewebapp.model.Stunden;
 import de.conet.techtalk.simplewebapp.model.User;
+import de.conet.techtalk.simplewebapp.servlet.ServletUtil;
 
 public class DbConnector {
 	private static final Logger LOG = LoggerFactory.getLogger(DbConnector.class);
 	private static JdbcConnectionPool connectionPool;
+	
+	private static final String SQL_GET_STUNDEN = "select * from stunden where (fk_user_id = %s or freigegeben = true)";
 	
 	static {
 		// Persist DB in home directory
@@ -110,6 +113,48 @@ public class DbConnector {
 		return result;
 	}
 	
+	public static List<Stunden> getStunden(User user) {
+		List<Stunden> result = new ArrayList<Stunden>();
+		
+		try (Connection c = DbConnector.getConnection()) {
+			Statement stm = c.createStatement();
+			ResultSet rs = stm.executeQuery(String.format("select * from stunden where fk_user_id = %s or freigegeben = true", user.getId()));
+			while(rs.next()) {
+				result.add(mapStunden(rs));
+			}
+		} catch(SQLException e) {
+			LOG.error(e.getMessage(),e);
+		}
+		return result;
+	}
+	
+	public static List<Stunden> getStunden(User user, String searchProject, String searchComment) {
+		List<Stunden> result = new ArrayList<Stunden>();
+		
+		try (Connection c = DbConnector.getConnection()) {
+			Statement stm = c.createStatement();
+
+			String sqlString = String.format(SQL_GET_STUNDEN, user.getId());	
+			if(ServletUtil.isValidString(searchProject) && ServletUtil.isValid(searchProject)) {
+				sqlString += String.format(" and projekt like '%s'", replaceWildcards(searchProject));
+			} 
+			if(ServletUtil.isValidString(searchComment) && ServletUtil.isValid(searchComment)) {
+				sqlString += String.format(" and kommentar like '%s'", replaceWildcards(searchComment));
+			}
+			ResultSet rs = stm.executeQuery(sqlString);
+			while(rs.next()) {
+				result.add(mapStunden(rs));
+			}
+		} catch(SQLException e) {
+			LOG.error(e.getMessage(),e);
+		}
+		return result;
+	}
+	
+	private static Object replaceWildcards(String string) {
+		return string.replaceAll("\\*", "%").replaceAll("\\?", "_");
+	}
+
 	public static Stunden mapStunden(ResultSet rs) throws SQLException {
 		Stunden s = new Stunden();
 		s.setId(rs.getInt(1));

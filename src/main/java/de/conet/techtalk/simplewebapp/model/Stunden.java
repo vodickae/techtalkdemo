@@ -32,6 +32,19 @@ public class Stunden {
 	 * Was hat er getan?
 	 */
 	private String kommentar;
+	
+	/**
+	 * Link zur Detail Seite
+	 */
+	private String link;
+
+	public String getLink() {
+		return link;
+	}
+
+	public void setLink(String link) {
+		this.link = link;
+	}
 
 	public int getId() {
 		return id;

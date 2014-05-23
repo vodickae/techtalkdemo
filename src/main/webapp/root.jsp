@@ -24,15 +24,14 @@
 		<li><a href="detail">detail</a></li>
 		</ul>
 		
-		
-		<form role="form">
+		<form role="form" method="POST">
 		  <div class="form-group">
 		    <label for="user">User</label>
-		    <input type="text" class="form-control" id="user" placeholder="Username">
+		    <input type="text" class="form-control" name="user" id="user" placeholder="Username">
 		  </div>
 		  <div class="form-group">
 		    <label for="password">Password</label>
-		    <input type="password" class="form-control" id="password" placeholder="Password">
+		    <input type="password" class="form-control" name="password" id="password" placeholder="Password">
 		  </div>
 		  <button type="submit" class="btn btn-default">Login</button>
 		</form>		

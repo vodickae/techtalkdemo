@@ -21,13 +21,13 @@
 		<li>Suchformular, mit dem die Tabelle "gefiltert" werden kann.</li>
 		</ul>
 		
-		<form class="form-inline" role="form">
+		<form class="form-inline" role="form" method="POST" action="/main">
 		<legend>Suchen</legend>
 		  <div class="form-group">
-		    <input type="text" class="form-control" id="searchProjekt" placeholder="Suche nach Projekt">
+		    <input type="text" class="form-control" name="searchProjekt" id="searchProjekt" placeholder="Suche nach Projekt">
 		  </div>
 		  <div class="form-group">
-		    <input type="password" class="form-control" id="searchComment" placeholder="Suche nach Kommentar">
+		    <input type="text" class="form-control" name="searchComment" id="searchComment" placeholder="Suche nach Kommentar">
 		  </div>
 		  <button type="submit" class="btn btn-default">Suche starten</button>
 		</form>		
@@ -43,13 +43,13 @@
 				<td>${item.anzahl}</td>
 				<td>${item.freigegeben}</td>
 				<td>${item.kommentar}</td>
-				<td></td>
+				<td><a href="/detail?id=${item.id}">Details</a></td>
 			</tr>
 		</c:forEach>
 		</table>
 		
 		<br/><br/>
-		<form class="form-horizontal" role="form">
+		<form class="form-horizontal" role="form" action="/main">
 		<legend>Neuer Eintrag</legend>
 		  <div class="form-group">
 		    <label for="inputProjekt" class="col-sm-2 control-label">Projekt</label>
