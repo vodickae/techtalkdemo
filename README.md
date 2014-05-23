@@ -41,18 +41,3 @@ Im Rahmen des TechTalks sind diese Seiten um die folgenden Features zu ergänzen
 Für die Umsetzung der Aufgabe sind nur die bereits referenzierten Abhängigkeiten erlaubt.
 Die Anwendung soll nur mit Hilfe von JSP, Servlets und JDBC erstellt werden.  
 
-## Mockups
-
-### Login
-
-<img src="mockup-login.png"/>
-
-### Hauptseite
-
-<img src="mockup-main.png"/>
-
-### Detailseite
-
-<img src="mockup-detail.png"/>
-
-
