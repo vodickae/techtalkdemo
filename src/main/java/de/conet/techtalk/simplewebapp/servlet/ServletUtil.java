@@ -12,7 +12,7 @@ public class ServletUtil {
 	}
 	
 	public static boolean isValid(String string) {
-		return string.indexOf('-') < 0 || string.indexOf(';') < 0 || string.indexOf('"') < 0 ||
-				string.indexOf('\'') < 0 || string.indexOf('(') < 0 || string.indexOf(')') < 0;
+		return string.indexOf('-') < 0 && string.indexOf(';') < 0 && string.indexOf('"') < 0 &&
+				string.indexOf('\'') < 0 && string.indexOf('(') < 0 && string.indexOf(')') < 0;
 	}
 }
